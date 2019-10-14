@@ -1,4 +1,4 @@
-# itree v1.0.5
+# excel2json v1.0.0
 
 #### 概述
 
@@ -6,16 +6,11 @@ excel 文件转 json python3.x
 
 #### 配置
 
-```json
-{
-	// 表头字段
-	"fields": ["name", "age", "sex"],
-	// excel入口文件
-	"input": "1班童鞋.xlsx",
-	// json输出文件名
-	"output": "students"
-}
-```
+| 属性   | 说明            | 类型   | 必填 | 默认值 |
+| ------ | --------------- | ------ | ---- | ------ |
+| fields | 表头字段        | Array  | 是   | -      |
+| input  | excel 入口文件  | String | 是   | -      |
+| output | json 输出文件名 | String | 是   | -      |
 
 #### 输出
 
