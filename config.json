@@ -1,0 +1,9 @@
+{
+    "fields": [
+        "name",
+        "age",
+        "sex"
+    ],
+    "input": "1班童鞋.xlsx",
+    "output": "students"
+}
