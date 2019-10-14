@@ -8,7 +8,7 @@ excel 文件转 json python3.x
 
 ```json
 {
-	// 标题字段
+	// 表头字段
 	"fields": ["name", "age", "sex"],
 	// excel入口文件
 	"input": "1班童鞋.xlsx",
