@@ -23,11 +23,16 @@ def handleExcelData(config):
     print('对应sheet：%s，行数：%d行，列数：%d列' % (sheet.name, nrows, ncols))
 
     fields = config['fields']   # 获取json数据的字段
+    index = config['index'] or 'false'   # 是否添加索引
 
     items = []
     for i in range(1, nrows):
 
         item = {}
+
+        if index == 'true':
+            item['index'] = i - 1
+
         for idx, field in enumerate(fields):
             item[field] = sheet.cell(i, idx).value
 
